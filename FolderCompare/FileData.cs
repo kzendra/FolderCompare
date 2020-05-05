@@ -25,8 +25,8 @@ namespace FolderCompare
                 return true;
             try
             {
-                string name1 = FileName.Split(new char[] { '-' })[1].ToLower();
-                string name2 = file.FileName.Split(new char[] { '-' })[1].ToLower();
+                string name1 = FileName.Split('-')[1].ToLower();
+                string name2 = file.FileName.Split('-')[1].ToLower();
                 if (name1 == name2)
                 {
                     if (MessageBox.Show($@"Partial name match:{Environment.NewLine}
